@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="carros.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo da Loja">
+        
+        </div>
+
+        <div class="location">
+            <p>Localização</p>
+          <center>Blumenau</center>
+        </div>
+
+        <div class="login">
+           <a href="http://127.0.0.1:5500/tela-de-login.html">
+           <button >Login </button>
+        </a>
+        </div>
+
+        <div class="pginicial">
+            <a href="http://127.0.0.1:5500/index.html">
+                <button >Página Inicial </button>
+             </a>
+            </div>
+
+        <div class="search">
+            <input type="text" placeholder="Pesquisar...">
+            <button>Buscar</button>
+        </div>
+    </header>
+    
+    <div class="carousel-container">
+        <div class="carousel">
+          <img src="carroselcarro.png" alt="Imagem 1">
+          <img src="carroselcarro2.png" alt="Imagem 2">
+          <img src="carroselcarro3.png" alt="Imagem 3">
+          <img src="carroselcarro4.png" alt="Imagem 3">
+          <img src="carroselcarro5.png" alt="Imagem 3">
+        </div>
+        <button class="carousel-btn prev" onclick="prevSlide()">&#8249;</button>
+        <button class="carousel-btn next" onclick="nextSlide()">&#8250;</button>
+      </div>
+
+      <div class="title">Street</div>
+      
+    <section>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://fiat.grupoamazonas.com.br/wp-content/uploads/2021/08/fiat-nova-strada.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="nomeveiculo">Fiat Strada</h2>
+              <p>A partir de</p>
+              <p class="valor"> R$ 106.990,00</p>
+               <p class="frase">Preço público sugerido</p>
+               <p>Frete não incluso.</p>
+             
+            </div>
+          </div>
+         
+          <div class="card" style="width: 18rem;">
+            <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="nomeveiculo">New City</h2>
+              <p>A partir de</p>
+              <p class="valor"> R$ 115.300</p>
+               <p class="frase">Preço público sugerido</p>
+               <p>Frete não incluso.</p>
+             
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.honda.com.br/automoveis/sites/hab/files/2022-09/model-hr-v-2022.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="nomeveiculo">New HR-V</h2>
+              <p>A partir de</p>
+              <p class="valor"> R$ 148.900</p>
+               <p class="frase">Preço público sugerido</p>
+               <p>Frete não incluso.</p>
+             
+            </div>
+          </div>
+         
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.honda.com.br/automoveis/sites/hab/files/2022-09/model-new-city-hatchback_0.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="nomeveiculo"> CITY HATCHBACK</h2>
+              <p>A partir de</p>
+              <p class="valor"> R$ 113.600</p>
+               <p class="frase">Preço público sugerido</p>
+               <p>Frete não incluso.</p>
+             
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.honda.com.br/automoveis/sites/hab/files/2023-01/Civic%20H%C3%ADbrido_miniatura_0.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="nomeveiculo">Civic Advanced </h2>
+              <p>A partir de</p>
+              <p class="valor"> R$ 259.900</p>
+               <p class="frase">Preço público sugerido</p>
+               <p>Frete não incluso.</p>
+             
+            </div>
+          </div>
+         
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.honda.com.br/automoveis/sites/hab/files/2023-10/250x200_miniatura.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="nomeveiculo">Civic TyperR</h2>
+              <p>A partir de</p>
+              <p class="valor"> R$ 429.900</p>
+               <p class="frase">Preço público sugerido</p>
+               <p>Frete não incluso.</p>
+             
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.honda.com.br/automoveis/sites/hab/files/2023-10/Accord_H%C3%ADbrido_V2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="nomeveiculo">Accord Advanced</h2>
+              <p>A partir de</p>
+              <p class="valor"> R$ 332.400</p>
+               <p class="frase">Preço público sugerido</p>
+               <p>Frete não incluso.</p>
+             
+            </div>
+          </div>
+         
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.honda.com.br/automoveis/sites/hab/files/2023-10/zrv-thumb-home-v5_0.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="nomeveiculo">ZR-V</h2>
+              <p>A partir de</p>
+              <p class="valor"> R$ 214.500</p>
+               <p class="frase">Preço público sugerido</p>
+               <p>Frete não incluso.</p>
+             
+            </div>
+          </div>
+          
+    </section>
+      
+   
+
+    <footer>
+        <div class="footer-left">
+            <div>A número 1</div>
+            <div class="footer-text">A melhor revendedora do Brasil</div>
+        </div>
+        @fastcar
+    </footer>
+   
+    <script src="carro.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo da Loja">
+        
+        </div>
+
+        <div class="location">
+            <p>Localização</p>
+          <center>Blumenau</center>
+        </div>
+
+        <div class="login">
+           <a href="http://127.0.0.1:5500/tela-de-login.html">
+           <button >Login </button>
+        </a>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Pesquisar...">
+            <button>Buscar</button>
+        </div>
+    </header>
+   
+    </div>
+</header>
+
+<div class="carousel-container">
+    <div class="carousel">
+      <img src="propp1.png" alt="Imagem 1">
+      <img src="propp2.png" alt="Imagem 2">
+      <img src="propp3.png" alt="Imagem 3">
+    </div>
+    <button class="carousel-btn prev" onclick="prevSlide()">&#8249;</button>
+    <button class="carousel-btn next" onclick="nextSlide()">&#8250;</button>
+  </div>
+
+
+
+<h1>O que fazemos em 60 minutos</h1>
+
+<div class="boxes-container">
+    <div class="box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTds-MbFVyJgaibbzZaAg1STFOQwNSEYH8QmsgS1w-CpD3ndg6LLjdkCeIFbbKoRMHa0Mo&usqp=CAU" alt="Relógio Emoji">
+        <h4>Agende seu horário</h4>
+    </div>
+
+    <div class="box">
+        <img src="data:image/png;base64,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" alt="Checklist Emoji">
+       <h4>Avalie os carros disponíveis</h4>
+    </div>
+
+    <div class="box">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAzFBMVEX///8AAADQz84/Pz+S1PXT0tHZ2NfV1NNCQkLb2tk5OTl7e3s+Pj4nJye7u7stLS2Y3f/p6emmpqbHx8fBwcH19fXm5uZUVFShoaGzs7ODg4NjY2ORkZEcHBwJCQng4OCNjY0YGBhzc3Ob1/aQkJDp9PqJ0fWkpKRQUVGamplhYWEkHxzI5PMhIiIzMzN1dXUjNT0KAABMaXhtlqqGt9AeEwpmjaGIxePV4OXe9P++6P6v3fWDuNNObHszQkoXICU+WWdXeIp4o7kADRqe3bGrAAAKl0lEQVR4nO2dC3faOhKAA8Q2DsEQGxJsEp5pCOmSpO3ddvvYe3fv/v//tEia0cM4ju1AJFx95/SctDE6M2hekkfqyYnFYrFYLBaLxWKxWCwWi8VisVgsFkvdufQdx/MvdYtxAIbTOLmaNAQ34ySY6pZqb0zX941srsIaaDm93bygHmMzO24l41aueoxWrFvMyqwLqMcY6Ra1EqPC+h2njsEkpcJ9Zx0PoqbjOM1oEK477dTv55FukUtxocr/sB5MfcfbKsfYqun4fnCtxtiroW6xixMqgoeOy3WT2WrphYqSRxNyHiShk6bvSDoB4l/8KJG/Dd2iF+LyRkh863moiue6ThCuRuvRKg6avuuhmp4zEx/YHEFFF0nz53o4U81VR3W6+yTks+t50jwaH3CEC95HLhri9Vkji/PbCJT0IqG/4c4okuDIZ/q54VWmeuB4IejoivLAaBW5gmeRx/Rbz3P0I2xWTEcv4hNtsIrcRMfMQP04v+xmdGM23T6PwYFuRV5igBLO/LRzAZ+6z8/PHz/t2GqTzrjPg6qh4WaK8oV0Bn218P74+csf306X/X5/eXr695fP/1R+u/ZVZ7zQrUwWQ1VBV877z1+/9funMv3+t6+P0hNjT1FxolubLK5kBZ1IEj/51/cfP0/v7k5PU0r++iwe6jUdWcWxbnV2wTB6TRT0BpJ+UFB/+P5zV8lv/+bPTQZURfTFUK86u1yAYE8pBa8Uj/q+3NHx15/82QGxVH9sqCvCdkWbmqhQcCe1ffi5o+NX/nREZ7ELQ+lQ42UwE9I0z0vTbtY87OjY//UXGqrycbOyIjoPsTOvixb6wsMfTtPziBtWZ9TGMdq8qwavAOHhgWQ1H4Pq4uXnf6Sn8T8YQl1phOv3U+A1MMwQN/KuX1eQTOMLKo6IFaCdmrOtAcu7a0/yoodXPpOKqn0MqREJNjDg7B1kLwRUM11iYS7sQT2++ql0wIFwc08s3Z2b5YlrYWAeJv4C2ewfqoq/MFo5wtRNSfvsC59MiReWifSqiv0v7KNzOomTgpbwLjjgheS7vy3mhEBKxT+FO3sQnf3Dil6QBROmKU1h0SCo+uI3mES6NmE/JweVvChMFpLJHPDI4onspzKJUIavHLH4OqDchYFvO96K5fdKi7VUog37+NnWEx2oA72DyV0cyF1EqqDsFG65y5jEAYk17MfZYYQuBZu3BQkPnXJeSPkuqwieONsO5rJV1PmhxC7OUGQxf1MmkCI/dsPpIzGIUYWv6yBAlRaJZeGg5AiyI37ho2Fx2jyI1GVg4bPri0ha9lv/cLdjpiMSTZlFrA8idRkeeK4Az7kvPYRkp/1n5tViuNwlyrvA9uJJQQPbDxW+dEnD/9IxNluTgBdS+gs3EWggMVbYr5aqt78hDfKMqH3nFELpwOHZsErw21lhvHG8fQJb+Y6oQqqMIpLikg0SC5vQvasIMd3lG0i9SsPw4q3Pxls7vIzXvbxgOXBCym62aq3WbMA9sf+RRa6tI07NSIiBSIdsSVeyokH4HLJdkJnQUPe2KdOwRzRk0b3iK5UfqoaJkRq+aQ6xsDFvDiU/vH2Lhhhr+l3T/FCKpSzSVH2hArGm/4nHUp8NrXsNDCHdE8udigOBmUK2CM3Jh1DTRM031yB38uJCqmkM0ZDUIGCwTsWR2KbUH+B85tSlJ13hN6xlr+o+NXVEeF164/O91+5epa0C65l58vhLsao9BtQRYRtjbNL6kGVBsrMC+9RVzWp4J/YT6XKTbXHpX+PH4H0i1FR1xDuxPAzIcBDD9iptFS5EqIEE1qk40pK/KCX7+rgY0708PMFFPikk3cWbMuKSGylpWfGe6I+bvcpaDZCEVKZgsRW7J5e4S0ONFAxitk9RKxLwHN30Jm8J8FsN58xIpTcE+t2Q53xiptivXW0Sl9g7RN9Evs3i98sDjw5YSlaTawleKL+J1J8NCbCZH0rf/KzKOPjmqSOV8SYY6QlGU/LWj3fCVNk+wlYF2r/Hmjf1F6UM9D5HdMLclB9l+D+Yf7Eb3Ljdv7CVgKTfok0U0LtevjqF19o9Ogr07RuQ7hlj4YmYE0vXk9g5G0uby+Y0CsMk0nDqQ7BprEoNgZ1GHTKFUJI2DDoEBVoltO8L2hVKLRSxP5W2X7odk1IFA5sTaas2b6Atbqj8oAVtoYVyxhwvJICIPdoBi65YeBKwtZsWpE1vY1YgBVAnGglXKHG3iCdN+dEh2mKMh4PmB5e5HGiaazqL4gjb65YqzleOqBNiB67uneAdMITGZB5coeI8vzUj4A82VoqJP72T3CXA/nUabYQvbp3z5TcPQVc8FtAueNS42mvIw4LxdEJPTXiRdBx4knn5hZtIZ/Yf2af4SQ3d+8CZcIOjpysdd9yQ6cSXUvS/jDvKbxd07cVnsHTX0TvBY0bMjhMqx/LpRLUXSZIs2r30L2J23I2btkHnEFT4vNCo2HS8TlqVTBJ2ct2/5fOtW5GX4Yb55FKh3WicrZTEAo4Me/xRk6q1HbiUcNR5q2P+PHaa7MiwO+B532gFcW+RMMOz9u7oIVM5elbdgzPt4s4BAxOhiihRejHo6LhO3Emfem53Qg9/74ciL+p/T/EqUq6/D/BiCMfz/UF8nXQWi0UnWYcDcTGG48bSXS+GpgkVX7VDfpGJ4zie57nbP9LtJo4v6zc3aM2bixxAb2aRz+8xUdlObDSbS88qMcbV3aKQi1RPb2ndBsQoZTW30+n6wUy9ikjeHJ1uPbNr1BI4TTpHXCVhELk+w20GYZK+EGQmf5yVQyaW34JpxpUmk03vvN3qbdK3ZJFvQPFANHMzDgW9iJd3bYvKgyt/cCq+AdND6/QpRytBR42gSsFu5CpKZhim72VL04pT8UStZM/0yF2KYTjO8DvK5CFOz5E/Tz1juCsi03Dnjr3zTtbVnsJCJ7iINN0VJS58JxitVqtR4PjZ7jUUJfqm3cZtEONdsTh4grtBdgNardbkeFyxGKIQmpwTBVt4NZbBS/5ySBbaorSP0BXzuFQslKlYL1fEe6a6XEHhivqPd+0F3B04kzREVzySrPgaLYwzQsOauSLa6Vyy05q5IrZUya54Xq+siHuKNXZFUGciaVhTV7yRXRGLOaO3bQqDb8t7sopYCugWbj/kZcWaFKjt39MV65UVebNCfbMi7ibXOCt2M1yRN7PoFm4vYOPKvL5ZMcsV8X7MmmTFPFesSVbEAjVrraj7/Pp+QFf8zbIibtsYcAHYPsB2zhpnRXS7rALVkNNCbyTTFeuVFbHZNMsVa1yg4n39M93C7YfHjKyIBap1xSMhc60I/2bYxftVyStQZ7qF2w95a0XjDp1U4jd3xfL3bBpJXlY09thCOTArWlc8Yn7TrIiueATN/UXIc8V62GmeKx7ffyWcSc5asSaemOWK7fL/UYHR9HZdEUrwYzmG8hoZrlgzDTOyImhYjw1iQtoV25t6+eGJyIpsEtvwV3PueHk7/L3iWXtLvdoXAN4oPe/yo0X6r//cKxmHiqteRGkq3bSCNSm8BcMbVcGaLPIVlBNx9XgdnCbCnoXGrB4Lpwwu41mSrOsWYiwWi8VisVgsFovFYrFYLBaLxWKxWCwWi8VisVgshvJ/gYKlN2k7VRYAAAAASUVORK5CYII=" alt="Lupa Emoji">
+        <h4>Escolha a melhor opção</h4>
+        Nosso negociador ajudará na sua escolha.
+    </div>
+
+    <div class="box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTru0cAGuxmdJFWvBibkjh0OwhUyoDYwwFUTQ&usqp=CAU" alt="Dinheiro Emoji">
+       <h4>Compra</h4>
+       Em minutos sua compra será feita.
+    </div>
+</div>
+
+<div class="content-container">
+    <div class="text-container">
+      <h2>O começo da FastCar
+    </h2>
+      <p>    Com a expertise de anos no mercado automotivo, entendendo as maiores dificuldades na compra de carros e através de pesquisas feitas em todo Brasil, a FastCar Store nasceu com o propósito de atender as necessidades de quem precisa comprar o carro de forma rápida, segura e sem burocracia. </p>
+      <p>    A amizade de tempos dos sócios Miguel e Ademir, reforçam os pilares importantes que consolidaram a marca como confiança e respeito.</p>
+      <a href="https://wa.me/47996287019/? text=textourl"> 
+        <button>Contato</button>
+      </a>
+    </div>
+    <div class="image-container">
+      <img src="logo.png" alt="Sua Imagem">
+    </div>
+  </div>
+  <h1>Escolha seu veículo</h1>
+<div class="escolha">
+
+
+
+    <div class="image-link">
+        <a href="http://127.0.0.1:5500/carros/carros.html">
+            <img src="carro.png" alt="Veículo 1">
+        </a>
+    </div>
+
+    <div class="image-link">
+        <a href="http://127.0.0.1:5500/motos/motos.html">
+            <img src="motoca.png" alt="Veículo 2">
+        </a>
+</div>
+
+</div>
+  
+    <footer>
+        <div class="footer-left">
+            <div>A número 1</div>
+            <div class="footer-text">A melhor revendedora do Brasil</div>
+        </div>
+        @fastcar
+    </footer>
+
+     <script src="usuario.js"></script>
+</body>
+</html>
